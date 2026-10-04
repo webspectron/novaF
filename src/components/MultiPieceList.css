@@ -1,0 +1,119 @@
+.ngf-pieces-card {
+  background: var(--ngf-white);
+  border: 1px solid var(--ngf-slate-200);
+  border-radius: var(--ngf-radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--ngf-shadow-card);
+}
+
+.ngf-pieces-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.ngf-pieces-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ngf-ink-900);
+}
+
+.ngf-pieces-count-badge {
+  background-color: var(--ngf-primary-50);
+  color: var(--ngf-primary-900);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--ngf-radius-full);
+}
+
+.ngf-pieces-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.ngf-piece-item {
+  background: var(--ngf-slate-50);
+  border: 1px solid var(--ngf-slate-200);
+  border-radius: var(--ngf-radius-md);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.piece-item-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.piece-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.piece-label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ngf-ink-900);
+}
+
+.piece-tracking-id {
+  font-family: var(--ngf-font-mono);
+  font-size: 0.75rem;
+  color: var(--ngf-slate-600);
+}
+
+.piece-status-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.125rem;
+}
+
+.ngf-badge-in-transit-sm {
+  background-color: var(--ngf-info-100);
+  color: var(--ngf-info-700);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--ngf-radius-sm);
+}
+
+.piece-location {
+  font-size: 0.75rem;
+  color: var(--ngf-slate-500);
+}
+
+.piece-barcode-wrap {
+  background: var(--ngf-white);
+  border: 1px solid var(--ngf-slate-200);
+  border-radius: var(--ngf-radius-sm);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.piece-specs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--ngf-slate-600);
+  font-weight: 500;
+}
+
+.spec-dot {
+  color: var(--ngf-slate-400);
+}
+
+@media (max-width: 768px) {
+  .ngf-pieces-grid {
+    grid-template-columns: 1fr;
+  }
+}
